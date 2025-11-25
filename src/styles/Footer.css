@@ -1,0 +1,33 @@
+.site-footer {
+  background: #112269;
+  color: #e5e7eb;
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: #cbd5f5;
+  text-decoration: none;
+}
+
+.site-footer p,
+.site-footer span {
+  color: white !important;
+}
+
+.site-footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: white;
+  margin-bottom: 0.6rem;
+}
+
+.footer-bottom {
+  font-size: 0.8rem;
+}

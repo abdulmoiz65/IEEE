@@ -1,0 +1,78 @@
+.guideline_steps {
+  background-color: rgb(246, 246, 247);
+  padding: 25px 0 25px 0 ;
+}
+.guideline_steps h2 {
+  font-weight: 700 !important;
+}
+
+
+.step-card {
+  border-radius: 0;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.step-card.step-1 {
+  background: #ffffff;
+}
+.step-card.step-2 {
+  background: #f5f1ff;
+}
+.step-card.step-3 {
+  background: #f1f5ff;
+}
+
+.step-header {
+  display: flex;
+  align-items: stretch;
+}
+
+.step-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  background: var(--primary);
+  color: #fff;
+}
+
+.step-arrow i {
+  font-size: 1.4rem;
+}
+
+.step-body {
+  flex: 1;
+  padding: 18px 24px;
+}
+
+.step-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.step-body ul {
+  margin-bottom: 0;
+  padding-left: 1.1rem;
+}
+
+.step-body li + li {
+  margin-top: 0.35rem;
+}
+
+.step-body a {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+.step-body a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 575.98px) {
+  .step-body {
+    padding: 16px 16px 18px;
+  }
+}

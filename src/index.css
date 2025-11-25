@@ -1,0 +1,10 @@
+
+:root {
+  --brand: #112269; /* MAJU Blue */
+  --accent: #d62c1f; /* MAJU Red */
+}
+
+body{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}

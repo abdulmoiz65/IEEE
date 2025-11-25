@@ -1,0 +1,65 @@
+
+.navbar {
+  transition: all 0.3s ease-in-out;
+}
+
+/* After scroll */
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Desktop / general: white links over hero, dark after scroll */
+.navbar:not(.scrolled) .nav-link {
+  color: #ffffff !important;
+}
+.navbar:not(.scrolled) .nav-link:hover,
+.navbar:not(.scrolled) .nav-link:focus {
+  color: #f3f4f6 !important;
+}
+
+.navbar.scrolled .nav-link {
+  color: var(--brand) !important;
+}
+.navbar.scrolled .nav-link:hover,
+.navbar.scrolled .nav-link:focus {
+  color: #000000 !important;
+}
+
+/* Toggler icon colors */
+.navbar:not(.scrolled) .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+.navbar:not(.scrolled) .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.95)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar.scrolled .navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.4);
+}
+.navbar.scrolled .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0,0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Mobile navbar dropdown background */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background: #ffffff !important;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  /* Mobile menu should use dark links even at top */
+  .navbar:not(.scrolled) .navbar-nav .nav-link {
+    color: var(--brand) !important;
+  }
+}
+
+/* Desktop: open dropdown on hover */
+@media (min-width: 992px) {
+  .navbar .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+  .navbar .dropdown-toggle::after {
+    margin-left: 0.25rem;
+  }
+}

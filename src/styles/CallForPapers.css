@@ -1,0 +1,59 @@
+/* Section styling */
+.cfp-section {
+    background: #f8f9fa;
+}
+.cfp-section h2{
+    font-weight: 700 !important;
+
+}
+/* Card subtle shadow and hover lift */
+.cfp-card {
+    border-radius: 0rem;
+    border: 1px solid #e3e6ea;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cfp-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Animated table rows */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-row {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+/* Staggered animation delays for each row */
+.animated-row:nth-child(1) { animation-delay: 0.1s; }
+.animated-row:nth-child(2) { animation-delay: 0.25s; }
+.animated-row:nth-child(3) { animation-delay: 0.4s; }
+.animated-row:nth-child(4) { animation-delay: 0.55s; }
+
+/* Header underline accent */
+.section-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.4rem;
+}
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40%;
+    height: 3px;
+    border-radius: 999px;
+    background: var(--brand);
+}

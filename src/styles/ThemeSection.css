@@ -1,0 +1,96 @@
+.theme-section {
+  background-color: #ffffff;
+}
+.theme-section .title{
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #6b7280;
+  font-weight: 600;
+}
+/* Main theme text */
+.theme-main {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--brand, #112269);
+}
+
+/* Theme Cards */
+.theme-card {
+  background-color: #ffffff;
+  border-radius: 0rem;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  padding: 1.25rem 1.3rem;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  opacity: 0;
+  transform: translateY(15px);
+  animation: themeCardFade 0.6s ease-out forwards;
+}
+
+/* Staggered animation */
+.theme-card:nth-child(1) {
+  animation-delay: 0.05s;
+}
+.theme-card:nth-child(2) {
+  animation-delay: 0.12s;
+}
+.theme-card:nth-child(3) {
+  animation-delay: 0.19s;
+}
+.theme-card:nth-child(4) {
+  animation-delay: 0.26s;
+}
+
+.theme-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+  border-color: rgba(37, 99, 235, 0.55);
+}
+
+/* Header & pill */
+.theme-card-header h5 {
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--brand, #112269);
+}
+
+.theme-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.15rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  background-color: #eef2ff;
+  color: var(--brand, #112269);
+}
+
+/* Bullets */
+.theme-list {
+  padding-left: 1.1rem;
+  margin-top: 0.6rem;
+}
+
+.theme-list li {
+  font-size: 0.9rem;
+  color: #4b5563;
+  margin-bottom: 0.35rem;
+}
+
+/* Animation keyframes */
+@keyframes themeCardFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive tweak */
+@media (max-width: 767.98px) {
+  .theme-card {
+    padding: 1.1rem 1.1rem;
+  }
+}
