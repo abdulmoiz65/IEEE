@@ -23,7 +23,7 @@ const Navbar = () => {
     (isScrolled ? " scrolled" : "");
 
   // First logo: white at top, MAJU colored after scroll
-  const mainLogoSrc = isScrolled ? {majuLogo} : {majuwhite};
+  const mainLogoSrc = isScrolled ? majuLogo : majuwhite;
 
   return (
     <nav className={navClass}>
@@ -32,7 +32,7 @@ const Navbar = () => {
         {/* Brand Area with two logos */}
         <a className="navbar-brand d-flex align-items-center gap-2" href="#home">
           <img
-            src={majuLogo}
+            src={mainLogoSrc}
             alt="MAJU Logo"
             width="55"
             height="55"
@@ -41,9 +41,9 @@ const Navbar = () => {
           <img
             src={khihtc}
             alt="KHI-HTC 2026 Logo"
-            width="180"
-            height="55"
-            className="rounded me-2"
+            width="130"
+            height="45"
+            className=" me-2"
           />
         </a>
 
@@ -99,20 +99,8 @@ const Navbar = () => {
             </li>
 
             <li className="nav-item">
-             <Link className="nav-link" to="/#theme">
-                Theme
-            </Link>
-            </li>
-
-            <li className="nav-item">
               <Link className="nav-link" to="/committee">
                 Committee
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link className="nav-link" to="/#workshops">
-                Workshops
               </Link>
             </li>
 

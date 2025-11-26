@@ -1,0 +1,86 @@
+/* Compact page header / banner */
+.sub-hero {
+  position: relative;
+  color: #ffffff;
+  padding: 0;
+}
+
+/* Wrapper for image + overlay */
+.sub-hero-banner {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Short fixed height (no 100vh) */
+.sub-hero-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+@media (min-width: 992px) {
+  .sub-hero-img {
+    height: 320px;
+  }
+}
+
+/* Dark gradient overlay */
+.sub-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.35)
+  );
+}
+
+/* Centered vertical content; spaced below navbar */
+.sub-hero-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  padding-top: 4.5rem; /* keeps clear of fixed navbar */
+  padding-bottom: 1.5rem;
+}
+
+.sub-hero-text {
+  max-width: 720px;
+}
+
+/* Text styles */
+.sub-hero-kicker {
+  letter-spacing: 0.16em;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.sub-hero-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.sub-hero-subtitle {
+  font-size: 1rem;
+  color: #e5e7eb;
+}
+
+/* Mobile tweaks */
+@media (max-width: 575.98px) {
+  .sub-hero-content {
+    align-items: flex-end;
+    padding-top: 4.5rem;
+    padding-bottom: 1.25rem;
+    text-align: left;
+  }
+
+  .sub-hero-title {
+    font-size: 1.5rem;
+  }
+
+  .sub-hero-subtitle {
+    font-size: 0.95rem;
+  }
+}

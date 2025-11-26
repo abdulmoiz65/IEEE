@@ -22,8 +22,8 @@ const ContactSection = () => {
                     <i className="bi bi-envelope-open me-2" />
                     Email
                   </div>
-                  <a href="mailto:mailhere" className="contact-link">
-                    mail add here
+                  <a href="mailto:KHI.HTC2026@maju.edu.pk" className="contact-link">
+                    KHI.HTC2026@maju.edu.pk
                   </a>
                 </div>
 
@@ -59,7 +59,8 @@ const ContactSection = () => {
                 </div>
 
                 {/* Social Media */}
-                <div className="mt-4">
+               
+                {/* <div className="mt-4">
                   <div className="contact-label mb-2">
                     <i className="bi bi-share me-2" />
                     Social Media
@@ -94,7 +95,8 @@ const ContactSection = () => {
                       <i className="bi bi-instagram" />
                     </a>
                   </div>
-                </div>
+                </div> */}
+              
               </div>
 
               {/* Right: Image with overlay and tag */}

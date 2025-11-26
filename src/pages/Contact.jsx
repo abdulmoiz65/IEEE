@@ -7,8 +7,8 @@ function Contact() {
     <>
         <Navbar />
         <Header />
-      <ContactSection />
-      <Footer />   
+        <ContactSection />  
+        <Footer />   
     </>
   );
 }
