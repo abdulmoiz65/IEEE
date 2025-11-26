@@ -1,6 +1,6 @@
 /* Section styling */
 .cfp-section {
-    background: #f8f9fa;
+    background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);
 }
 .cfp-section h2{
     font-weight: 700 !important;

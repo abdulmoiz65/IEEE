@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Header.css";
+import karachiBanner from "../assets/images/Karachi.jpg";
+import { Link } from "react-router-dom";
+import karachi2 from "../assets/images/Karachi2.jpg";
 
 const Header = () => {
   const FULL_TEXT =
@@ -32,7 +35,7 @@ const Header = () => {
       <div className="hero-banner position-relative">
         {/* Karachi banner image */}
         <img
-          src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1600&q=80"
+          src={karachiBanner}
           alt="Karachi – Quaid-e-Azam Mausoleum"
           loading="eager"
           decoding="async"
@@ -71,10 +74,10 @@ const Header = () => {
                   </small>
                 </p>
                 <div className="d-flex flex-wrap gap-2">
-                  <a href="#cfp" className="btn btn-primary btn-lg">
+                  <Link to="/callforpaper" className="btn btn-primary btn-lg">
                     <i className="bi bi-megaphone me-2" />
                     Call for Papers
-                  </a>
+                  </Link>
                   <a href="#registration" className="btn btn-accent btn-lg">
                     <i className="bi bi-box-arrow-in-right me-2" />
                     Register Now

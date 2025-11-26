@@ -105,15 +105,15 @@ const Navbar = () => {
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#program">
-                Program
-              </a>
+              <Link className="nav-link" to="/committee">
+                Committee
+              </Link>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#workshops">
+              <Link className="nav-link" to="/#workshops">
                 Workshops
-              </a>
+              </Link>
             </li>
 
             <li className="nav-item">
@@ -123,9 +123,9 @@ const Navbar = () => {
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#venue">
+              <Link className="nav-link" to="/venue">
                 Venue
-              </a>
+              </Link>
             </li>
 
             <li className="nav-item">
@@ -135,9 +135,9 @@ const Navbar = () => {
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#contact">
+              <Link className="nav-link" to="/contact">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
