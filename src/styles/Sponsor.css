@@ -1,0 +1,61 @@
+.sponsor-section {
+     background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);
+}
+
+/* Main panel */
+.sponsor-panel {
+  background: #f9fafb;
+  border-radius: 0rem;
+  border-left: 4px solid var(--brand, #112269);
+  padding: 1.6rem 1.5rem;
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.06);
+}
+
+/* Title inside panel */
+.sponsor-panel-title {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #4b5563;
+  font-weight: 600;
+}
+
+/* List styling */
+.sponsor-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.sponsor-list li {
+  position: relative;
+  padding-left: 1.3rem;
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+  color: #111827;
+}
+
+.sponsor-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45rem;
+  width: 7px;
+  height: 7px;
+  border-radius: 0px;
+  background: var(--brand, #112269);
+}
+
+/* Subtle entrance animation (optional) */
+.sponsor-panel {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: sponsorFadeUp 0.6s ease-out forwards;
+}
+
+@keyframes sponsorFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

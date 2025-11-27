@@ -8,7 +8,7 @@ import shaukat from "../assets/images/committee/ShaukatWasi.jpg";
 import tariq from "../assets/images/committee/TariqRahimSoomro.webp";
 import zubair from "../assets/images/committee/drzubair.jpg";
 import shahid from "../assets/images/committee/ShahidShaikh.jpg";
-// import parkash from "../assets/images/committee/ParkashLohana.jpg";
+import parkash from "../assets/images/committee/ParkashLohana.jpeg";
 import hanan from "../assets/images/committee/HananDaudpota.jpeg";
 
 const OrganizingCommittee = () => {
@@ -244,7 +244,7 @@ const OrganizingCommittee = () => {
               <div className="committee-profile d-flex gap-3">
                 <div className="committee-photo-sm flex-shrink-0">
                   <img
-                    src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=600&q=80"
+                    src={parkash}
                     alt="Parkash Lohana"
                     className="img-fluid"
                     loading="lazy"

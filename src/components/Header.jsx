@@ -77,10 +77,10 @@ const Header = () => {
                     <i className="bi bi-megaphone me-2" />
                     Call for Papers
                   </Link>
-                  <a href="#registration" className="btn btn-accent btn-lg">
+                  <Link to="/registration" className="btn btn-accent btn-lg">
                     <i className="bi bi-box-arrow-in-right me-2" />
                     Register Now
-                  </a>
+                  </Link>
                   <a href="#program" className="btn btn-outline-light btn-lg">
                     <i className="bi bi-diagram-3 me-2" />
                     Program Overview

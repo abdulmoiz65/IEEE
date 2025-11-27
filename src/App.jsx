@@ -7,6 +7,8 @@ import { Routes , Route } from 'react-router-dom'
 import Committee from './pages/Committee'
 import Contact from './pages/Contact'
 import useScrollOnOtherPages from "./hooks/useScrollOnOtherPages";
+import Register from './pages/Register';
+import Sponsors from './pages/Sponsors';
 function App() {
   useScrollOnOtherPages();
   return (
@@ -17,6 +19,8 @@ function App() {
     <Route path='/venue' element={<Venue />} />
     <Route path='/committee' element={<Committee />} />
     <Route path='/contact' element={<Contact />} />
+    <Route path='/registration' element={<Register />} />
+    <Route path='/sponsors' element={<Sponsors />} />
   </Routes>
   )
 }
