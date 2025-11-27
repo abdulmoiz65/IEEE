@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Header.css";
-import karachiBanner from "../assets/images/Karachi.jpg";
+import karachiBanner from "../assets/images/karachi.jpg";
 import { Link } from "react-router-dom";
-import karachi2 from "../assets/images/Karachi2.jpg";
 
 const Header = () => {
   const FULL_TEXT =

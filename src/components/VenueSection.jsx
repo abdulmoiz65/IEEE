@@ -1,5 +1,5 @@
 import "../styles/VenueSection.css";
-import karachi2 from "../assets/images/Karachi2.jpg";
+import karachi2 from "../assets/images/karachi2.jpg";
 
 const VenueSection = () => {
   return (
