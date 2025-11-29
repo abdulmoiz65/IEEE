@@ -3,6 +3,7 @@ import "../styles/Navbar.css";
 import majuLogo from "../assets/images/maju.png";
 import khihtc from "../assets/images/logo.jpeg";
 import majuwhite from "../assets/images/logofavwhite.png";
+import IEEEkarachi from "../assets/images/ieeekarachi.webp";
 import { Link } from "react-router-dom";
 
 
@@ -37,6 +38,13 @@ const Navbar = () => {
             width="55"
             height="55"
             className="rounded me-2"
+          />
+          <img
+            src={IEEEkarachi}
+            alt="IEEE"
+            width="130"
+            height="45"
+            className="rounded me-2 d-none d-md-block"
           />
           <img
             src={khihtc}
