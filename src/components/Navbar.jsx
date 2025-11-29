@@ -3,7 +3,7 @@ import "../styles/Navbar.css";
 import majuLogo from "../assets/images/maju.png";
 import khihtc from "../assets/images/logo.jpeg";
 import majuwhite from "../assets/images/logofavwhite.png";
-import IEEEkarachi from "../assets/images/ieeekarachi.webp";
+import IEEEkarachi from "../assets/images/ieee.webp";
 import { Link } from "react-router-dom";
 
 
